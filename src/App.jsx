@@ -13,6 +13,7 @@ import Categories from './Components/Categories';
 import Blogs from './Components/Blogs';
 import About from './Components/About';
 import Home from './Components/Home';
+import Footer from './Components/Footer';
 // import Organization from './Pages/Orgnization';
 
 function App() {
@@ -30,9 +31,11 @@ function App() {
         <Route path="/blogs" element={<Blogs/>} />
         {/* <Route path='/organization' element={<Organization/>}/> */}
         <Route path='/about' element={<About/>}/>
-        
-        
       </Routes>
+      <p>body</p>
+      <p>page</p>
+      <Footer/>
+   
     </div>
   );
 }
