@@ -1,0 +1,97 @@
+/* -----------------header main container---------- */
+.container-fluid_{  
+    background-color: #184520;  
+}
+.container-fluid_:hover{
+  background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
+}
+
+/* -----------------tender logo---------------- */
+.logo{
+
+  display:flex;
+  justify-content: flex-start;
+  width: 230px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+/* -----------------------whatsapp button------------------------ */
+.whatsapp_inquirey  {
+   display:flex;
+   justify-content: end;
+   align-items: center;
+   gap: 10px;
+}
+.btn-outline-success{
+  border: 1px solid white !important;
+}
+
+
+/* ----------------nav menue items-------------------*/
+.nav-link {
+  color: whitesmoke; 
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-family:Arial, Helvetica, sans-serif ;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
+}
+.nav-link:hover {
+  color: white; 
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.nav-link:focus,
+.nav-link:active {
+  color: yellow;
+}
+/*  nav item icons */
+.icons {
+    margin-left: -10px;
+}
+.icons:hover{
+    color : black;
+}
+
+/* -------------marquee moving headline------------------- */
+.marquee_msg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    color: aliceblue;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px; 
+    box-shadow: 0 10px 10px rgba(8, 225, 95, 0.5);
+    font-size: 25px; 
+    text-align: center;
+    letter-spacing: 0.8px;
+}
+
+
+
+
+
+
+
+/* home page */
+.home h1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 4em;
+}
+
+.home h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-size: 2em;
+    align-items: center;
+}
+
+
+  
