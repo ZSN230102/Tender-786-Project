@@ -9,7 +9,7 @@ const Header = () => {
       <div className="row pb-2 g-0 " style={{ minHeight: "140px" }}>
 
         <div className="col-3 d-flex pt-3">
-          <img src={tender786Logo} className='logo' alt='logo' />
+          <img src={tender786Logo} className='Headerlogo' alt='logo' />
         </div>
 
         <div className='col-6 d-flex align-items-lg-end justify-content-center align-items-md-start align-items-sm-start p-md-3 p-sm-3 navItemColumn'>

@@ -10,7 +10,7 @@
 
 
 /* -----------------tender logo---------------- */
-.logo{
+.Headerlogo{
 
   display:flex;
   justify-content: flex-start;
@@ -18,7 +18,7 @@
   height: 50px;
 }
 @media (max-width:536px) {
-  .logo{
+  .Headerlogo{
     width: 139px !important;
     height: 36px !important;
     padding-top: 3px;
