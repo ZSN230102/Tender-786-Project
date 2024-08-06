@@ -1,7 +1,12 @@
 /* -----------------header main container---------- */
+:root{
+  --primary-color:#16411e;
+}
 .container-fluid_{  
     background-color: #16411e; 
-    height: 100% !important;
+    /* height: 100% !important; */
+    position:sticky;
+    top:0;
 }
 .container-fluid_:hover{
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
@@ -10,7 +15,7 @@
 
 
 /* -----------------tender logo---------------- */
-.Headerlogo{
+.HeaderFooterlogo{
 
   display:flex;
   justify-content: flex-start;
@@ -18,7 +23,7 @@
   height: 50px;
 }
 @media (max-width:536px) {
-  .Headerlogo{
+  .HeaderFooterlogo{
     width: 139px !important;
     height: 36px !important;
     padding-top: 3px;
@@ -38,7 +43,7 @@
   transition: color 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, font-size 0.3s ease;
 }
 .nav-link:hover {
-  color: black; 
+  color: white ; 
   background: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
   border-radius: 50px;
   font-size: 20px;
@@ -51,9 +56,10 @@
 /*nav item icons */
 .icons {
     margin-left: -10px;
+    color:  whitesmoke !important;
 }
 .icons:hover{
-    color : black;
+    color : black !important;
 }
 .hamburg_CloseIcon:focus{
   border: 0px !important;
@@ -67,7 +73,10 @@
   background-color: white !important;
   color: white !important;
 }
-
+.theme-color{
+  background-color: var(--primary-color);
+  color: #deecdd;
+}
 /* -------------nav menue items in offcanvas--------------------- */
 
 .offcanvas{
@@ -187,7 +196,7 @@
 
 
 /* ---------------home page ----------------*/
-.home h1 {
+/* .home h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,15 +209,23 @@
     justify-content:center;
     font-size: 2em;
     align-items: center;
-
+} */
+.hero-height{
+  height:70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
+
 /*---------------Footer styling------------------*/
+
 .footer-container .logo {
   transition: transform 0.4s ease;
 }
 .footer-container{
-     background-color: #00853E;;
+     background-color: #184520;;
 } 
 .footer-container .logo:hover {
   transform: scale(1.2);
@@ -223,12 +240,14 @@
 }
 
 .footer-container .footer-list li:hover {
-  color: white;
   transform: translateX(5px);
 }
 
 .footer-container hr {
   border-top: 1px solid #dee2e6;
+}
+.footer-link:hover{
+  color: gray !important;
 }
 
 .customColor {
@@ -236,13 +255,13 @@
 }
 
 .footer-container .footer-link {
-  color: black;
   text-decoration: none;
 }
 
-.footer-container .footer-link:hover {
-  color: white;
+.footer-list .footer-link:hover {
+  color: gray !important;
 }
+
 
 .footer-container .social-icons a {
   display: inline-block;
@@ -255,9 +274,10 @@
 }
 
 /* Media Query for screens smaller than 425px */
-@media (max-width: 425px) {
+@media (max-width: 485px) {
   .footer-container .logo {
-    max-width: 120px; 
+    max-width: 141px;
+    height: auto;
   }
 
   .footer-container .social-icons a {
@@ -268,8 +288,4 @@
   }
 }
 
-
-  
-
-}
 

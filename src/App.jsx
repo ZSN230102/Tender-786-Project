@@ -12,18 +12,18 @@ import Contact from './Components/Contact';
 import Categories from './Components/Categories';
 import Blogs from './Components/Blogs';
 import About from './Components/About';
-import Home from './Components/Home';
 import Footer from './Components/Footer';
+import Home from './Pages/Home';
 // import Organization from './Pages/Orgnization';
 
 function App() {
   return (
     <div >
      
-      <Header />
+      <Header/>
       <Routes>
 
-        <Route path='/home' element={<Home/>} />
+        <Route path='/' element={<Home/>} />
         <Route path="/tender" element={<Tender/>} />
         <Route path="/cities" element={<Cities/>} />
         <Route path="/contact" element={<Contact/>} />
@@ -32,8 +32,6 @@ function App() {
         {/* <Route path='/organization' element={<Organization/>}/> */}
         <Route path='/about' element={<About/>}/>
       </Routes>
-      <p>body</p>
-      <p>page</p>
       <Footer/>
    
     </div>
