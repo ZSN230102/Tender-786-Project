@@ -288,6 +288,11 @@
 }
 
 /* -------------Detail Page-------------- */
+.colorHover:hover{
+  text-decoration: underline !important;
+  color: var(--primary-color) !important;
+}
+
 .tenderAlerts{
   color: red !important;
 }
