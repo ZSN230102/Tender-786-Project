@@ -1,12 +1,13 @@
 /* -----------------header main container---------- */
 :root{
-  --primary-color:#16411e;
+  --primary-color:#082b0e;
 }
 .container-fluid_{  
-    background-color: #16411e; 
-    /* height: 100% !important; */
+    background-color: #0B2B11; 
+    height: 80% !important;
     position:sticky;
     top:0;
+    z-index: 10;
 }
 .container-fluid_:hover{
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
@@ -80,7 +81,7 @@
 /* -------------nav menue items in offcanvas--------------------- */
 
 .offcanvas{
-  background-color: #1a6a29; 
+  background-color: #0b2b11; 
 }
 .offcanvas:hover{
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%) !important;
@@ -196,20 +197,6 @@
 
 
 /* ---------------home page ----------------*/
-/* .home h1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 4em;
-}
-
-.home h3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    font-size: 2em;
-    align-items: center;
-} */
 .hero-height{
   height:70vh;
   display:flex;
@@ -225,7 +212,7 @@
   transition: transform 0.4s ease;
 }
 .footer-container{
-     background-color: #184520;;
+  background-color: #0b2b11;
 } 
 .footer-container .logo:hover {
   transform: scale(1.2);
@@ -280,7 +267,7 @@
     height: auto;
   }
 
-  .footer-container .social-icons a {
+  .footer-container .social-icons a{
     width: 8vw;
     max-width: 30px; 
     min-width: 20px; 
@@ -289,3 +276,35 @@
 }
 
 
+/* ---------Tender By Orgnization ,Catagory ,Cities----------- */
+.tenderByRows p{
+  border-radius: 15px !important;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.tenderByRows p:hover{
+  transform: scale(1.1);
+  color: green;
+}
+
+/* -------------Detail Page-------------- */
+.tenderAlerts{
+  color: red !important;
+}
+.blinkingEffectOfTenderAlert {
+  animation: slowBlink 2s infinite;
+  z-index: 0 !important;
+}
+
+@keyframes slowBlink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+.moreNewspapers img{
+  width: 10%;
+  height: auto;
+}

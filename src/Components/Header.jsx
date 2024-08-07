@@ -231,7 +231,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="row border-bottom border-top" >
+      <div className=" row border-bottom border-top gx-lg-4 gx-md-4 g-sm-0 " >
 
         <div className="col-12 p-0">
           <marquee className="marquee_msg">
