@@ -12,7 +12,18 @@
 .container-fluid_:hover{
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
 }
-
+.table-data {
+border-radius: 15px;
+background-color: #0B2B11;
+color:white;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+.table-data .table>:not(caption)>*>*{
+  border-radius: 15px;
+background-color: #0B2B11;
+color:white;
+}
 
 
 /* -----------------tender logo---------------- */
@@ -212,7 +223,7 @@
   transition: transform 0.4s ease;
 }
 .footer-container{
-  background-color: #0b2b11;
+     background-color:var(--primary-color);
 } 
 .footer-container .logo:hover {
   transform: scale(1.2);
@@ -267,15 +278,61 @@
     height: auto;
   }
 
-  .footer-container .social-icons a{
+  .footer-container .social-icons a {
     width: 8vw;
-    max-width: 30px; 
+    max-width: 20px; 
     min-width: 20px; 
     margin: 0 5px;
   }
 }
+.details-btn{
+  background:white;
+  color: var(--primary-color) !important;
+padding: 2px 20px;
+border-radius: 50px;
+}
+.details-btn:hover{
+  background:var(--primary-color);
+  color: white !important;
+padding: 2px 20px;
+border-radius: 50px;
+border: 1px solid white;
+}
+/*-------------------Blog-------------------*/
+.card {
+  transition: transform 0.3s ease;
+}
 
+.card:hover {
+  transform: scale(1.05);
+}
+/*
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
 
+.background-image {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(1); 
+}
+*/
+.customArticle{
+  position: relative;
+  padding-left: 60px;
+  margin-top: 30px;
+}
+.link-underline:hover{
+  text-decoration: underline rgb(3, 67, 3) !important;
+}
 /* ---------Tender By Orgnization ,Catagory ,Cities----------- */
 .tenderByRows p{
   border-radius: 15px !important;
@@ -288,17 +345,21 @@
 }
 
 /* -------------Detail Page-------------- */
-.colorHover:hover{
-  text-decoration: underline !important;
-  color: var(--primary-color) !important;
-}
-
 .tenderAlerts{
   color: red !important;
 }
 .blinkingEffectOfTenderAlert {
   animation: slowBlink 2s infinite;
   z-index: 0 !important;
+}
+td .details-btn link{
+  color:black;
+  background-color: var(--primary-color);
+
+}
+td .details-btn link:hover{
+  color:rgb(243, 243, 243);
+  background-color: var(--primary-color);
 }
 
 @keyframes slowBlink {
@@ -312,4 +373,17 @@
 .moreNewspapers img{
   width: 10%;
   height: auto;
+}
+.Newspapers img{
+  width: 25%;
+  height: auto;
+}
+.icon-hover {
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+}
+
+.iconLink:hover {
+  color: white; /* Text color on hover */
+  background-color: black; /* Light background color on hover */
+
 }
