@@ -1,5 +1,6 @@
 import React from 'react';
 import tender786Logo from '../tender_786.png';
+import { Link } from 'react-router-dom';
 // import mailIcon  from ''
 // import PhoneLogo from './Call.png'
 const Footer = () => {
@@ -45,10 +46,10 @@ const Footer = () => {
     <div className="col-6 col-md-2 text-center text-md-start">
       <p className="mb-2 customColor">Our Services</p>
       <ul className="list-unstyled footer-list">
-        <li><a href="#organization" className="footer-link text-white">Organization</a></li>
-        <li><a href="#category" className="footer-link text-white">Category</a></li>
-        <li><a href="#tender" className="footer-link text-white">Tender</a></li>
-        <li><a href="#cities" className="footer-link text-white">Cities</a></li>
+        <li><Link to="/organization" className="footer-link text-white"> Organization</Link></li>
+        <li><Link to="/category" className="footer-link text-white"> Category</Link></li>
+        <li><Link to="/tender" className="footer-link text-white"> Tender</Link></li>
+        <li><Link to="/cities" className="footer-link text-white"> Cities</Link></li>
       </ul>
     </div>
 
