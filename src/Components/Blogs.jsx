@@ -5,17 +5,17 @@ import image03Logo from './image03.png';
 import image04Logo from './image04.png';
 import image05Logo from './image05.png';
 import BackgroundImage from './BgImage.png'
-import Homelogo from './Home.png';
+// import Homelogo from './Home.png';
 import { Link } from 'react-router-dom';
 
 const Blogs = () => {
   return (
     <>
-           <div className="position-relative text-center text-white" style={{ height: '100vh' }} >
+           <div className="position-relative  opacity-bg text-center text-white  " style={{ height: '100vh' }} >
         <img
           src={BackgroundImage}
           alt="BgImage"
-          className="position-absolute w-100 h-100 object-fit-cover"
+          className="position-absolute w-100 h-100 object-fit-cover "
           style={{ top: '0', left: '0', filter: 'brightness(90%)'  }} 
         />
         <div className="position-absolute top-50 start-50 translate-middle">
