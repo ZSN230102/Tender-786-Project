@@ -13,7 +13,18 @@
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
 }
 
-
+.table-data {
+  border-radius: 15px;
+  background-color: #0B2B11;
+  color:white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  }
+  .table-data .table>:not(caption)>*>*{
+    border-radius: 15px;
+  background-color: #0B2B11;
+  color:white;
+  }
 
 /* -----------------tender logo---------------- */
 .HeaderFooterlogo{
