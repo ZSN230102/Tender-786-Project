@@ -4,7 +4,6 @@ import TenderByCity from "../Components/TenderByCity"
 import TenderByOrgnization from "../Components/TenderByOrgnization"
 import TenderTable from "../Components/TenderTable"
 
-
 const Home = () => {
   return (
     <>
