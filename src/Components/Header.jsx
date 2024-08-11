@@ -1,4 +1,4 @@
-import React from 'react';
+ ;
 import tender786Logo from '../tender_786.png';
 import { Link } from 'react-router-dom';
 
@@ -118,18 +118,18 @@ const Header = () => {
 
             </div>
 
-            <div class="vertical-line me-1 d-lg-none">  </div>
+            <div className="vertical-line me-1 d-lg-none">  </div>
 
 
-            <button class="btn hamburg_CloseIcon d-flex p-0 text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <button className="btn hamburg_CloseIcon d-flex p-0 text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
               </svg>
             </button>
 
-            <div class="offcanvas offcanvas-end" style={{ width: "40%" }} tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close btn btn-light hamburg_CloseIcon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div className="offcanvas offcanvas-end" style={{ width: "40%" }} tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div className="offcanvas-header">
+                <button type="button" className="btn-close btn btn-light hamburg_CloseIcon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
 
               <div className='row g-0 tenderLogoRow'>
@@ -146,7 +146,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div class="offcanvas-body d-flex justify-content-start flex-column border-top p-0 m-0">
+              <div className="offcanvas-body d-flex justify-content-start flex-column border-top p-0 m-0">
 
                 <ul className="navbar-nav  gap-1">
 

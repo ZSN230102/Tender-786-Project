@@ -366,6 +366,14 @@ border: 1px solid white;
   width: 10%;
   height: auto;
 }
+.DownloadStarted_msg{
+  top: 350px !important; 
+  display: none ;
+}
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) !important;
+  backdrop-filter: blur(10px) !important;
+}
 
 /* ABout page css start */
 

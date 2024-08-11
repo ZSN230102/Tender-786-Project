@@ -1,4 +1,3 @@
-import React from 'react';
 import tender786Logo from '../tender_786.png';
 // import mailIcon  from ''
 // import PhoneLogo from './Call.png'
@@ -40,7 +39,7 @@ const Footer = () => {
     <div className="col-12 col-md-3 text-center text-md-start">
       <p className="mb-2 text-center customColor">Tender786</p>
       <h6 className="mb-3 text-white footer-link">Your Gateway to Exclusive Tender Opportunities</h6>
-      <p class="text-white footer-link  ">Welcome to Tender 786, your premier source for accessing the latest tender opportunities across a wide range of categories and government departments in Pakistan.</p>
+      <p className="text-white footer-link  ">Welcome to Tender 786, your premier source for accessing the latest tender opportunities across a wide range of categories and government departments in Pakistan.</p>
     </div>
 
     <div className="col-6 col-md-2 text-center text-md-start">
@@ -58,7 +57,7 @@ const Footer = () => {
       <ul className="list-unstyled footer-list">
         <li><Link to="/subscription" className="footer-link text-white">Subscription</Link></li>
         <li><a href="#contact-us" className="footer-link text-white">Contact Us</a></li>
-        <li><Link to="/latest-tender" className="footer-link text-white">Get's Latest Tender</Link></li>
+        <li><Link to="/latest-tender" className="footer-link text-white">Gets Latest Tender</Link></li>
         <li><a href="#privacy-policy" className="footer-link text-white"><strong>Privacy Policy</strong></a></li>
       </ul>
     </div>
