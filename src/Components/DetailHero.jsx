@@ -84,7 +84,7 @@ const DetailHero = () => {
                             
                             <tr className="d-flex justify-content-start justify-content-sm-center  fex-wrap align-items-center">
                                 <div className="text-center" onClick={downloadStartedMsgfun}>
-                                    <Link   className="btn theme-color btn-outline-success rounded-pill text-decoration-none text-white" to="#"> 
+                                    <Link   className="btn theme-color btn-outline-success rounded-pill text-decoration-none text-white" to="https://online.tender786.com/uploads/tender786-1722952598385-5dt016j3.jpg"> 
                                       
                                       <div className="row d-flex align-items-center justify-content-center m-0 p-0 gap-1 g-0" >
                                         
