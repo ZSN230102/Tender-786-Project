@@ -15,10 +15,15 @@ import About from './Components/About';
 import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Detail from './Pages/Detail';
+import Organization from './Components/Organization';
+import GetALatestTender from './Components/GetALatestTender'
+import Subscription from './Components/Subscription'
+
 
 function App() {
   return (
     <div >
+     
       <Header/>
       <Routes>
 
@@ -27,10 +32,15 @@ function App() {
         <Route path="/cities" element={<Cities/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/categories" element={<Categories/>} />
+   
+        <Route path="/organization" element={<Organization/>} />
         <Route path="/blogs" element={<Blogs/>} />
-        {/* <Route path='/organization' element={<Organization/>}/> */}
         <Route path='/about' element={<About/>}/>
         <Route path='/detail' element={<Detail/>}/>
+        <Route path='/latest-tender' element={<GetALatestTender/>}/>
+        <Route path='/subscription' element={<Subscription/>}/>
+      
+      
       </Routes>
       
       <Footer/>

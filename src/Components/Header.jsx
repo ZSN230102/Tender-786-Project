@@ -1,42 +1,26 @@
+ ;
 import tender786Logo from '../tender_786.png';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import BaseUrl from '../api/BaseUrl';
 
 
 const Header = () => {
-  const Base_Url=BaseUrl();
-  const [sliderMessage, setSliderMessage] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  useEffect(() => {
-    const fetchSettings = async () => {
-      try {
-        const response = await axios.get(Base_Url+"/settings");
-        if (response.data.status === true) {
-          const data = response.data.data[0];
-          setSliderMessage(data.sliderMessage);
-          setPhoneNumber(data.phoneNumber);
-        } else {
-          console.error('No records found');
-        }
-      } catch (error) {
-        console.error('Error fetching settings:', error);
-      }
-    };
-
-    fetchSettings();
-  }, []);
   return (
     <div className="container-fluid container-fluid_">
       <div className="row pb-2 g-0 " style={{ minHeight: "140px" }}>
+
         <div className="col-3 d-flex pt-3">
           <img src={tender786Logo} className='HeaderFooterlogo' alt='logo' />
         </div>
+
         <div className='col-6 d-flex align-items-lg-end justify-content-center align-items-md-start align-items-sm-start p-md-3 p-sm-3 navItemColumn'>
+
+
           <nav className="navbar navbar-expand-lg p-0 ">
+
             <div className="collapse navbar-collapse" >
+
               <ul className="navbar-nav mx-auto gap-3">
+
                 <li className="nav-item ">
                   <Link className="nav-link icons" to="/" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-house-door" viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '3px' }}>
@@ -45,6 +29,7 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link className="nav-link icons" to="/tender">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bookmarks" viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '2px' }}>
@@ -54,6 +39,7 @@ const Header = () => {
                     Tender
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link className="nav-link icons" to="/cities">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-buildings" viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '2px' }}>
@@ -63,6 +49,7 @@ const Header = () => {
                     Cities
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link className="nav-link icons" to="/categories">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-boxes" viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '2px' }}>
@@ -71,6 +58,7 @@ const Header = () => {
                     Categories
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link className="nav-link icons" to="/organization">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-diagram-3 " viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '2px' }}>
@@ -79,6 +67,7 @@ const Header = () => {
                     Organization
                   </Link>
                 </li>
+
                 <li className="nav-item">
                   <Link className="nav-link icons" to="/blogs">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-diagram-3" viewBox="0 0 16 16" style={{ marginRight: '0.2em', marginBottom: '0px' }}>
@@ -118,7 +107,8 @@ const Header = () => {
             <div className="whatsapp_inquirey me-2">
 
               <div className="d-flex flex-column text-white numbers_">
-                <span> {phoneNumber}</span>
+                <span> +9230978967 </span>
+                <span>+9231644843</span>
               </div>
 
               <Link to="https://wa.me/+9237584398353" target="_blank" rel="noopener noreferrer" className="btn btn_ btn-outline-success text-white rounded-pill">
@@ -133,11 +123,11 @@ const Header = () => {
 
             <button className="btn hamburg_CloseIcon d-flex p-0 text-white d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
               </svg>
             </button>
 
-            <div className="offcanvas offcanvas-end" style={{ width: "40%" }} tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className="offcanvas offcanvas-end" style={{ width: "40%" }} tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div className="offcanvas-header">
                 <button type="button" className="btn-close btn btn-light hamburg_CloseIcon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -245,7 +235,7 @@ const Header = () => {
 
         <div className="col-12 p-0">
           <marquee className="marquee_msg">
-          {sliderMessage}
+            WEBSITE IS LIVE NOW YOU SEE YOUR TENDERS ACCORDING TO YOUR CATEGORIES AND CITIES ---- FESCO ISSUED CORRIGENDUM AGAINST TENDERS NOS. NCB-609 TO 616 AND NCB-656 TO 664 DATE EXTENDED 12-08-2024-INSTEAD OF 25-07-2024
           </marquee>
         </div>
       </div>
@@ -253,4 +243,5 @@ const Header = () => {
     </div>
   );
 };
+
 export default Header;

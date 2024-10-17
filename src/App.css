@@ -12,19 +12,19 @@
 .container-fluid_:hover{
   background: linear-gradient(109.6deg, rgb(5, 84, 94) 16%, rgb(89, 89, 89) 91.1%);
 }
-.table-data {
-border-radius: 15px;
-background-color: #0B2B11;
-color:white;
-margin-bottom: 50px;
-margin-top: 50px;
-}
-.table-data .table>:not(caption)>*>*{
-  border-radius: 15px;
-background-color: #0B2B11;
-color:white;
-}
 
+.table-data {
+  border-radius: 15px;
+  background-color: #0B2B11;
+  color:white;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  }
+  .table-data .table>:not(caption)>*>*{
+    border-radius: 15px;
+  background-color: #0B2B11;
+  color:white;
+  }
 
 /* -----------------tender logo---------------- */
 .HeaderFooterlogo{
@@ -287,13 +287,13 @@ color:white;
 }
 .details-btn{
   background:white;
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 padding: 2px 20px;
 border-radius: 50px;
 }
 .details-btn:hover{
   background:var(--primary-color);
-  color: white !important;
+  color: white;
 padding: 2px 20px;
 border-radius: 50px;
 border: 1px solid white;
@@ -332,6 +332,7 @@ border: 1px solid white;
 }
 .link-underline:hover{
   text-decoration: underline rgb(3, 67, 3) !important;
+  
 }
 /* ---------Tender By Orgnization ,Catagory ,Cities----------- */
 .tenderByRows p{
@@ -352,15 +353,6 @@ border: 1px solid white;
   animation: slowBlink 2s infinite;
   z-index: 0 !important;
 }
-td .details-btn link{
-  color:black;
-  background-color: var(--primary-color);
-
-}
-td .details-btn link:hover{
-  color:rgb(243, 243, 243);
-  background-color: var(--primary-color);
-}
 
 @keyframes slowBlink {
   0%, 50%, 100% {
@@ -374,16 +366,103 @@ td .details-btn link:hover{
   width: 10%;
   height: auto;
 }
+.DownloadStarted_msg{
+  top: 350px !important; 
+  display: none ;
+}
+.glass{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)) !important;
+  backdrop-filter: blur(10px) !important;
+}
+
+/* ABout page css start */
+
+
+/* about page background image */
+.background-imageabout1{
+  background-image: url('./Components/railway-1555348_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh; 
+  width: 100%;
+  position :relative;
+
+}
+/* text on bg image of about page */
+
+.opacity-bg{
+  background: linear-gradient(rgba(248, 232, 0, 0.317),rgba(4, 63, 4, 0.628));
+}
+
+.fade-in-text  {
+  overflow: hidden;
+  font-weight: 700;
+  border-right: 0.15em solid white;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.fontabout{
+  font-size: 20px;
+}
+.background-imageabout{
+  background-image: url('./Components/elec1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85vh; 
+  width: 100%;
+  position :relative;
+
+}
+.bgcolor{
+  background-color: aliceblue;
+}
+
+/* ABout page css ends */
+
+
+
+/* 
+Categories page css starts */
+
 .Newspapers img{
   width: 25%;
   height: auto;
 }
-.icon-hover {
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition for color changes */
+
+/* Categories page css ends */
+
+/* Subscription page css starts */
+ 
+.ContainerSub{
+  margin:10px;
+  padding:23px;
+  width:auto;
+  height: auto;
+  border-radius:20px;
+  background-color: aliceblue;
+}
+.conatinernum{
+  padding:5px;
+  width:30vw;
+  height: 16vh;
+  border-radius:20px;
+  
+}
+.backgroundSubscription{
+  background-color: aliceblue;
 }
 
-.iconLink:hover {
-  color: white; /* Text color on hover */
-  background-color: black; /* Light background color on hover */
 
-}
+/* Subscription page css ends */
+

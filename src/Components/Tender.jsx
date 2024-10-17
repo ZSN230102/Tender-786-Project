@@ -1,4 +1,4 @@
-import React from 'react';
+ ;
 import TenderTable from './TenderTable';
 const Tender = () => {
   return (

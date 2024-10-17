@@ -1,9 +1,9 @@
-import React from 'react';
+ ;
 import { Link } from 'react-router-dom';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const ContactUs = () => {
+const Contact = () => {
   return (
     <div className="container my-5">
       <div className="row">
@@ -23,8 +23,8 @@ const ContactUs = () => {
 
           {/* Header Section */}
           <div className="text-center mb-5">
-            <h1 className="display-4 fw-bold animate__animated animate__fadeInDown">Subscribe to Tenders</h1>
-            <p className="lead animate__animated animate__fadeInUp ">Get the latest tender alerts directly to your inbox.</p>
+            <h1 className="display-4 fw-bold animate_animated animate_fadeInDown">Subscribe to Tenders</h1>
+            <p className="lead animate_animated animate_fadeInUp ">Get the latest tender alerts directly to your inbox.</p>
           </div>
 
           {/* Email Alert Section */}
@@ -66,13 +66,13 @@ const ContactUs = () => {
 </div>
 
             <div className='mt-4'>
-              <div className="btn btn-dark d-inline-flex align-items-center iconLink animate__animated animate__pulse animate__infinite">
+              <div className="btn btn-dark d-inline-flex align-items-center iconLink animate_animated animatepulse animate_infinite">
                Get in Touch
               </div>
             </div>
           </div>
           {/* Customer Service Section */}
-          <div className="alert alert-success animate__animated animate__fadeIn">
+          <div className="alert alert-success animate_animated animate_fadeIn">
             <h2 className="fw-bold">Open Customer Service</h2>
             <p>
               Our dedicated team is available 7 days a week to assist you with any inquiries or support you may need. Feel free to reach out to us anytime!
@@ -99,4 +99,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
